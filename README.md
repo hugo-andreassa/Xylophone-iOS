@@ -1,59 +1,21 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# Xylophone App
 
-# Xylophone
+This is an iOS application that mimics a xylophone, a percussion instrument. With this app, you can play different musical notes, creating your own melodies and rhythms.
 
-## Our Goal
+## Features
 
-The goal of this tutorial is to dive into a simple iOS recipe - how to play sound and use an Apple library called AVFoundation. The most important skill of a great programmer is being able to solve your own problems. We’ll do that by exploring StackOverflow, Apple Documentation and learning how to search for solutions effectively. By learning to use these tools, you’ll be able to start adding custom features to an app and get it to do what you want it to.
+- Intuitive Interface: The app provides a simple and user-friendly interface designed to make playing the musical notes easy.
+- Musical Notes: Each key on the xylophone screen corresponds to a specific musical note. Tapping a key will play the corresponding note.
+- Note Combinations: You can play multiple keys simultaneously to create chords or complex melodies.
 
+![screen_3](https://github.com/hugo-andreassa/xylophone-ios/assets/50621697/89b81292-c5c2-483c-bf13-0ad5bfefacd4)
 
-## What you will create
+## Usage
 
-You will be making your first musical instrument! Music apps are so popular on the App Store that they even get their own category. So in this module, we’re going to make a colourful XyloPhone app. Get it? Ok, the jokes are bad, but remember, I only wrote the good ones... 
+1. Upon opening the app, you will be presented with the xylophone screen.
+2. Tap any of the xylophone keys to play the corresponding musical note.
+3. Experiment with different key combinations to create your own melodies and rhythms.
+4. To customize the xylophone's appearance, tap the settings icon in the top-right corner of the screen and choose your desired key color.
+5. To exit the app, press the Home button or the power button on your device.
 
-## What you will learn
-
-* How to play sound using AVFoundation and AVAudioPlayer.
-* Understand Apple documentation and how to use StackOverflow.
-* Functions and methods in Swift. 
-* Data types.
-* Swift loops.
-* Variable scope.
-* The ViewController lifecycle.
-* Error handling in Swift.
-* Code refactoring.
-* Basic debugging.
-
-## Replacement Code
-
-```
-import UIKit
-import AVFoundation
-
-class ViewController: UIViewController {
-    
-    var player: AVAudioPlayer!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    @IBAction func keyPressed(_ sender: UIButton) {
-        playSound()
-    }
-    
-    func playSound() {
-        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
-                
-    }
-}
-```
-
-
-
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
-
+Enjoy playing different musical notes with the Xylophone app! Be creative and explore the magic of music through this simple and fun application.
